@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="João Vitor Philippe Desenvolvedor Front End Localizado em Joinville" />
+  <meta name="author" content="João Vitor Philippe" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <title>João Vitor Philippe | Desenvolvedor Front End</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container-geral">
+    <header id="header">
+      <a id="logo" href="./index.html">
+        <img src="./assets/logo.svg" alt="" />
+      </a>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" class="font-s" role="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Expêriencia</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="introducao" aria-label="Introdução">
+      <div class="introducao-imagem">
+        <img src="./assets/perfil.jpg" alt="" />
+      </div>
+      <div class="introducao-titulo">
+        <h1 class="font-xl cor-0">
+          João Vitor Philippe <br />
+          Desenvolvedor <br />
+          Front End
+        </h1>
+        <span class="font-s cor-3">📌 Localizado em Joinville</span>
+      </div>
+    </main>
+
+    <section id="sobre" aria-label="Seção Sobre">
+      <h2 class="font-l cor-0">Sobre</h2>
+      <div class="sobre-texto">
+        <p class="font-l-2 cor-0">
+          Estou me graduando em ADS e atualmente sou estudante de
+          Desenvolvimento Web.
+        </p>
+        <p class="font-l-2 cor-0">
+          Desenvolvi interesse em Desenvolvimento Web durante a faculdade e
+          venho estudando por cursos de terceiros e buscando conhecimento por
+          conta própria.
+        </p>
+        <p class="font-l-2 cor-0">As tecnologias que tenho estudado:</p>
+      </div>
+      <div class="sobre-techs">
+        <img src="./assets/tecnologias/html.svg" alt="html" />
+        <img src="./assets/tecnologias/css.svg" alt="css" />
+        <img src="./assets/tecnologias/js.svg" alt="javascript" />
+        <img src="./assets/tecnologias/react.svg" alt="react" />
+      </div>
+    </section>
+  </div>
+
+  <section id="experiencia" aria-label="Seção de Experiência">
+    <div class="container-geral">
+      <div class="experiencia-conteudo">
+        <h2 class="font-l cor-5">Expêriencia</h2>
+        <div class="empresa">
+          <span class="empresa-ano">2023-2024</span>
+          <h3 class="empresa-titulo">Selbetti Tecnologias</h3>
+          <span class="empresa-titulo">Estágio - Desenvolvimento Web</span>
+          <p class="empresa-texto">
+            Passei por 1 ano de aprendizado no mundo de desenvolvimento web.
+            Também participei da tomada de decisões de projetos, além de ter
+            utilizado banco de dados e alterado código fonte em alguns casos.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>CSS</li>
+            <li>C#</li>
+            <li>SQL Server</li>
+            <li>JS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" aria-label="Seção de Contato">
+    <div class="container-geral">
+      <h2 class="font-l cor-5">Contato</h2>
+      <div class="contato-conteudo">
+        <div class="contato-texto">
+          <p class="font-l-3 cor-5">
+            Estou disponível para novos projetos no momento. Entre em contato
+            comigo e marcamos uma conversa <span class="mao">👋</span>
+          </p>
+          <div class="contato-imagem">
+          </div>
+        </div>
+
+        <div class="contato-form">
+          <form method="POST">
+            <input type="hidden" name="_next"/>
+
+            <label class="font-l-3">Nome:</label>
+            <input type="text" name="nome" id="nome" required />
+
+            <label class="font-l-3">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <label class="font-l-3">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" required></textarea>
+
+            <button type="submit" class="font-s">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="font-s cor-3 container-geral">
+    <p>Site criado por João Vitor Philippe. Alguns direitos reservados.</p>
+  </footer>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
